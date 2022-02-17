@@ -1,0 +1,6 @@
+pycurl>=7.44.1
+colorama>=0.4.4
+certifi>=2021.10.8
+
+# Developping requirements
+# autopep8>=1.6.0    # Helps to format your scripts
