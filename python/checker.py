@@ -267,12 +267,14 @@ def main():
         proxies = get_proxies("socks")
         if not proxies:
             log.error("Cannot get socks proxies, check your internet connection!")
+            exit(1)
         check(proxies)
 
     elif args.get_http_proxies:
-        proxies = get_proxies("http")
+        proxies = get_proxies("proxy")
         if not proxies:
             log.error("Cannot get http proxies, check your internet connection!")
+            exit(1)
         check(proxies)
 
     if not (args.proxies or args.proxies_file or args.get_socks_proxies or args.get_http_proxies):
