@@ -6,7 +6,7 @@ Executable binaries builded using [`pyinstaller`](https://pypi.org/project/pyins
 
 ## Troubleshooting:
 
-If you found any error with Linux binary, you just need to check required libraries in the MOST with `ldd` command
+If you found any error with Linux binary, you just need in the MOST cases to check required libraries with `ldd` command
 
 ```bash
 ldd ./main
